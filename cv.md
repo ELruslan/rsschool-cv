@@ -4,18 +4,18 @@
 -   [Code](#Code)
 -   [Contacts](#Contacts)
 
-![photo](assets/img/photo.jpg)
+![photo](img/photo.jpg)
 
 Ruslan Eloyan
 =============
 
 Junior Frontend
 
--   [![Youtube](assets/svg/Youtube.svg)](#)
--   [![Instagram](assets/svg/Instagram.svg)](#)
--   [![Facebook](assets/svg/Facebook.svg)](#)
--   [![Twitter](assets/svg/Twitter.svg)](#)
--   [![Pinterest](assets/svg/Pinterest.svg)](#)
+-   [![Youtube](svg/Youtube.svg)](#)
+-   [![Instagram](svg/Instagram.svg)](#)
+-   [![Facebook](svg/Facebook.svg)](#)
+-   [![Twitter](svg/Twitter.svg)](#)
+-   [![Pinterest](svg/Pinterest.svg)](#)
   
 Resume
 ------
@@ -132,4 +132,4 @@ mail:eloyan666@gmail.com
 
 2021
 
-[![RS School](assets/svg/rs_school_js.svg)](https://rs.school/js/)
+[![RS School](svg/rs_school_js.svg)](https://rs.school/js/)
