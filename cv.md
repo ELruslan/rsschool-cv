@@ -127,3 +127,9 @@ address:Minsk
 phone: +375 44 568 44 70
 
 mail:eloyan666@gmail.com
+
+[My GitHub](https://github.com/elruslan)
+
+2021
+
+[![RS School](assets/svg/rs_school_js.svg)](https://rs.school/js/)
