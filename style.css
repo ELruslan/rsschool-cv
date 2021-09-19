@@ -1,0 +1,1074 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Mr+Bedfort&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+html {
+    scroll-padding-top: 70px;
+    /* height of sticky header */
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: var(--fontRoboto);
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+:root {
+    --bg-dark: #030303;
+    --dark-orange: #fe7101;
+    --font-gold: #9d8665;
+    --font1: 80px;
+    --font2: 32px;
+    --font3: 28px;
+    --font4: 22px;
+    --font5: 18px;
+    --fontForum: 'Forum', cursive;
+    --fontRoboto: 'Roboto', sans-serif;
+}
+
+.conteiner {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: calc(100% - 40px);
+    border: 1px solid grey;
+    min-height: 100%;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--dark-orange);
+    z-index: 2;
+}
+
+.header__body {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    height: 124px;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+.header__list li {
+    list-style: none;
+}
+
+.header__list li:hover {
+    background-color: var(--bg-dark);
+}
+
+.header__list a {
+    color: white;
+    padding: 53px 20px 53px 20px;
+}
+
+.header__list {
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 126px;
+}
+
+.header__list .active {
+    background-color: var(--bg-dark);
+}
+
+.header__burger {
+    display: none;
+}
+
+.photo {
+    align-items: center;
+    background: -webkit-linear-gradient(315deg, rgb(254, 45, 0) 4%, rgb(254, 113, 1) 68%);
+    background: -moz-linear-gradient(315deg, rgb(254, 45, 0) 4%, rgb(254, 113, 1) 68%);
+    background: linear-gradient(315deg, rgb(254, 45, 0) 4%, rgb(254, 113, 1) 68%);
+    height: 800px;
+    padding: 150px;
+    width: 100%;
+    display: flex;
+}
+
+.photo__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.photo__title {
+    font-size: var(--font2);
+    color: white;
+    text-align: center;
+    padding-top: 70px;
+    text-transform: uppercase;
+}
+
+.photo__title h1 {
+    padding-bottom: 10px;
+}
+
+.photo__title p {
+    padding-bottom: 10px;
+}
+
+.wrapper-img {
+    border-radius: 50%;
+    border: 6px solid white;
+}
+
+.social {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+span {
+    color: var(--font-gold);
+}
+
+.circle {
+    width: 47px;
+    height: 47px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+    margin-right: 24px;
+}
+
+.circle img {
+    margin: 0 auto;
+    position: absolute;
+    margin: 10px;
+}
+
+.circle:hover {
+    background-color: var(--bg-dark);
+}
+
+.main {
+    padding-top: 126px;
+    flex: 1 1 auto;
+}
+
+.name_section {
+    background-color: var(--bg-dark);
+    width: 100%;
+    display: flex;
+    padding-top: 70px;
+    color: #fff;
+}
+
+.education__title {
+    font-size: var(--font1);
+    color: white;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 70px;
+}
+
+.education__title h2 {
+    font-size: 42px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.education__title h2::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 3px solid var(--dark-orange);
+    left: -50px;
+    top: 10px;
+}
+
+.education__title h2::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 3px solid var(--dark-orange);
+    right: -50px;
+    top: 10px;
+}
+
+.education, .language, .work {
+    position: relative;
+}
+
+.education .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 20px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: var(--dark-orange);
+    position: absolute;
+    left: -53px;
+}
+
+.work .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 20px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: var(--dark-orange);
+    position: absolute;
+    left: -53px;
+}
+
+#skills .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 20px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: var(--dark-orange);
+    position: absolute;
+    left: -53px;
+}
+
+.language .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 20px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: var(--dark-orange);
+    position: absolute;
+    left: -53px;
+    top: -8px;
+}
+
+.wrapper__block_one {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 70px;
+
+}
+
+.wrapper__block_two {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 70px;
+}
+
+.education h3 {
+    font-size: var(--font2);
+    position: relative;
+}
+
+.education h3::before {
+    content: '';
+    position: absolute;
+    height: 241px;
+    border: 1px solid white;
+    border-radius: 50%;
+    left: -31px;
+    top: 66px;
+}
+
+.education__text h4 {
+    color: var(--dark-orange);
+    font-size: var(--font3);
+    padding-top: 20px;
+    position: relative;
+}
+
+.education p {
+    font-size: var(--font4);
+}
+
+.education__text h4::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--dark-orange);
+    border-radius: 50%;
+    left: -40px;
+    top: 23px;
+    background-color: var(--bg-dark);
+}
+
+.work h3 {
+    font-size: var(--font2);
+    position: relative;
+}
+
+.work h3::before {
+    content: '';
+    position: absolute;
+    height: 253px;
+    border: 1px solid white;
+    border-radius: 50%;
+    left: -31px;
+    top: 63px;
+}
+
+.work__text h4 {
+    color: var(--dark-orange);
+    font-size: var(--font3);
+    padding-top: 20px;
+    position: relative;
+}
+
+.work p {
+    font-size: var(--font4);
+}
+
+.work__text h4::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--dark-orange);
+    border-radius: 50%;
+    left: -40px;
+    top: 23px;
+    background-color: var(--bg-dark);
+}
+
+#skills {
+    width: 40%;
+    position: relative;
+    padding-bottom: 70px;
+}
+
+#skills .skills__title {
+    padding-top: 20px;
+}
+
+#skills h3 {
+    font-size: var(--font2);
+    color: white;
+}
+
+#skills h3::before {
+    content: '';
+    position: absolute;
+    border: 1px solid #fff;
+    height: 190px;
+    left: -38px;
+    top: 94px;
+}
+
+#skills span {
+    font-size: 17px;
+    color: white;
+}
+
+#skills p {
+    font-size: var(--font4);
+    color: var(--dark-orange);
+}
+
+.skills__title p::before {
+    content: '';
+    position: absolute;
+    border: 3px solid var(--dark-orange);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    left: -47px;
+    background-color: #000;
+    z-index: 22;
+    top: 41px;
+}
+
+.skills__title {
+    position: relative;
+}
+
+.progress {
+    width: 100%;
+    height: 20px;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+.progress .progress-bar {
+    width: 0;
+    opacity: 0;
+    background-color: var(--dark-orange);
+    border-radius: 10px;
+    height: 100%;
+    position: relative;
+    transition: all .5s;
+}
+
+.progress-bar span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--dark-orange);
+}
+
+.language {
+    margin-right: 47px;
+}
+
+.language h3 {
+    font-size: var(--font4);
+    position: relative;
+}
+
+.language h3::before {
+    content: '';
+    position: absolute;
+    height: 213px;
+    border: 1px solid white;
+    border-radius: 50%;
+    left: -31px;
+    top: 49px;
+}
+
+.language__text h4 {
+    color: var(--dark-orange);
+    font-size: var(--font4);
+    padding-top: 20px;
+    position: relative;
+}
+
+.language p {
+    font-size: var(--font4);
+}
+
+.language__text h4::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--dark-orange);
+    border-radius: 50%;
+    left: -40px;
+    top: 23px;
+    background-color: var(--bg-dark);
+}
+
+.about__me {
+    background-color: var(--bg-dark);
+}
+.education__txt{
+    font-size: var(--font3);
+}
+
+.code {
+    font-size: var(--font4);
+}
+
+.info {
+    font-size: var(--font3);
+    color: #ffffff;
+    padding-bottom: 70px;
+}
+
+footer {
+    font-size: var(--font3);
+    color: #ffffff;
+    background-color: var(--dark-orange);
+}
+
+.school {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    align-items: center;
+}
+
+.school a {
+    color: #ffffff;
+}
+
+.year-title {
+    padding-right: 80px;
+}
+@media (min-width:320px) and (max-width:480px){
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        z-index: 3;
+    }
+    .header__body {
+        height: 40px;
+    }
+    .header__burger span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        top: 2px;
+        background-color: white;
+        transition: all 0.5s ease 0s;
+    }
+    .header__burger::before {
+        content: '';
+        background-color: red;
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        left: 0;
+        transition: all 0.5s ease 0s;
+    }
+    .header__burger::after {
+        content: '';
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        left: 0;
+        transition: all 0.5s ease 0s;
+    }
+    .header__burger.active span {
+        transform: scale(0);
+    }
+    .header__burger.active:before {
+        transform: rotate(45deg);
+        top: 12px;
+    }
+    .header__burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .header__burger::before {
+        top: 12px;
+    }
+    .header__burger::after {
+        bottom: 5px;
+    }
+    .header__menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        overflow: auto;
+        width: 100%;
+        height: 100%;
+        background-color: orange;
+        padding: 70px 10px 20px 10px;
+    }
+    .header__menu.active {
+        transition: all 0.5s ease 0s;
+        top: 0;
+    }
+    .header__list {
+        display: block;
+    }
+    .header__list li {
+        list-style: none;
+        margin: 0 0 30px 0;
+    }
+    .photo__title {
+        font-size: var(--font4);
+    }
+    body.lock {
+        overflow: hidden;
+    }
+    .header__list a {
+        color: white;
+        padding: 0 5px 0 5px;
+    }
+    .header__list {
+        color: white;
+        text-transform: uppercase;
+        font-size: 18px;
+        text-decoration: none;
+        line-height: 12px;
+    }
+    .photo {
+        padding: 0px;
+
+    }
+    .wrapper__block_one {
+        flex-direction: column;
+    }
+    .wrapper-img {
+        width: 180px;
+        height: 180px;
+    }
+    .education h3 {
+        font-size: var(--font3);
+        text-align: center;
+    }
+    .work h3 {
+        font-size: var(--font3);
+        text-align: center;
+    }
+    #skills h3 {
+        font-size: var(--font3);
+        text-align: center;
+    }
+    .education__text h4 {
+        font-size: var(--font4);
+    }
+    .work__text h4 {
+        font-size: var(--font4);
+    }
+    .Skills__text h4 {
+        font-size: var(--font4);
+    }
+    .education p {
+        font-size: var(--font5);
+    }
+    .work p {
+        font-size: var(--font5);
+    }
+    #skills p {
+        font-size: var(--font5);
+    }
+    .code {
+        font-size: 8px;
+    }
+    .photo__main {
+        display: flex;
+        flex-direction: column;
+    }
+    .social {
+        padding-top: 20px;
+    }
+    .conteiner {
+        margin: 0 auto;
+        max-width: 767px;
+        width: calc(100% - 40px);
+        border: 1px solid grey;
+    }
+    .photo {
+
+        height: 650px;
+    }
+    .education__list {
+        padding-bottom: 70px;
+        flex-direction: column;
+    }
+    .university-year p {
+        font-size: 12px;
+    }
+    .education__title {
+        padding-bottom: 25px;
+    }
+    .education__university {
+        padding-bottom: 70px;
+    }
+    .university-year p {
+        visibility: hidden;
+    }
+    #skills {
+        width: 100%;
+        padding-bottom: 70px;
+        padding-left: 46px;
+    }
+    #skills h3::before {
+        height: 190px;
+        left: 8px;
+        top: 72px;
+    }
+    #skills p {
+        font-size: var(--font5);
+        color: var(--dark-orange);
+    }
+    .school {
+        font-size: 20px;
+        height: 70px;
+    }
+    footer {
+        padding-top: 0;
+    }
+    .header__list .active {
+        line-height: 30px;
+    }
+    .info {
+        font-size: 22px;
+    }
+    .social {
+        flex-wrap: wrap;
+    }
+    .education__title h2 {
+        font-size: var(--font2);
+    }
+    .education__title h2::before {
+        width: 20px;
+        height: 20px;
+        left: -30px;
+        top: 9px;
+    }
+    .education__title h2::after {
+        width: 20px;
+        height: 20px;
+        right: -30px;
+        top: 9px;
+    }
+    .education {
+        padding-left: 40px;
+        padding-bottom: 0px;
+    }
+    .work {
+        padding-left: 40px;
+        padding-bottom: 0px;
+    }
+    #skills {
+        padding-left: 35px;
+        padding-bottom: 0px;
+    }
+    .education .fa {
+        left: 80px;
+    }
+    .work .fa {
+        left: 45px;
+    }
+    #skills .fa {
+        left: 75px;
+    }
+    .education__txt {
+        font-size: 16px;
+    }
+    .work h3::before {
+     
+        height: 300px;
+        
+    }
+    .skills__title p::before {
+       
+        left: -36px;
+       
+        top: 23px;
+    }
+}
+@media (min-width:481px) and (max-width:768px) {
+    .header__body {
+        height: 40px;
+    }
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        z-index: 3;
+    }
+    .header__burger span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        top: 2px;
+        background-color: white;
+        transition: all 0.5s ease 0s;
+    }
+    .header__burger::before, .header__burger::after {
+        content: '';
+        background-color: red;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        transition: all 0.5s ease 0s;
+    }
+    .header__burger.active span {
+        transform: scale(0);
+    }
+    .header__burger.active:before {
+        transform: rotate(45deg);
+        top: 12px;
+    }
+    .header__burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .header__burger::before {
+        top: 12px;
+    }
+    .header__burger::after {
+        bottom: 5px;
+    }
+    .header__menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        overflow: auto;
+        width: 100%;
+        height: 100%;
+        background-color: orange;
+        padding: 70px 10px 20px 10px;
+    }
+    .header__menu.active {
+        transition: all 0.5s ease 0s;
+        top: 0;
+    }
+    .header__list {
+        display: block;
+    }
+    .header__list li {
+        list-style: none;
+        margin: 0 0 30px 0;
+    }
+    body.lock {
+        overflow: hidden;
+    }
+    .header__list a {
+        color: white;
+        padding: 0 5px 0 5px;
+    }
+    .header__list {
+        color: white;
+        text-transform: uppercase;
+        font-size: 18px;
+        text-decoration: none;
+        line-height: 12px;
+    }
+    .code {
+        font-size: 21px;
+    }
+    .education .fa {
+        font-size: 12px;
+        left: 55px;
+    }
+    #skills h3::before {
+       
+        top: 80px;
+    }
+    .education__title {
+        font-size: var(--font4);
+    }
+    .education__title h2 {
+        font-size: 30px;
+    }
+    .education{
+        padding-left: 45px;
+        padding-bottom: 70px;
+
+    }
+    .social {
+        display: flex;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .info {
+        font-size: var(--font4);
+        color: #ffffff;
+        padding-bottom: 68px;
+    }
+    .photo__main {
+        display: flex;
+        flex-direction: column;
+    }
+    .conteiner {
+        margin: 0 auto;
+        max-width: 767px;
+        width: calc(100% - 40px);
+        border: 1px solid grey;
+        display: flex;
+        flex-direction: column;
+    }
+    .photo {
+        padding: 0px;
+    }
+    .wrapper__block_two {
+     
+        padding-top: 30px;
+    }
+    .education h3 {
+        font-size: var(--font4);
+        text-align: center;
+    }
+    .education__text h4 {
+        font-size: var(--font5);
+    }
+    .education p {
+        font-size: 12px;
+    }
+    .university-year p {
+        font-size: 12px;
+    }
+    .education__university {
+        padding-bottom: 70px;
+    }
+    .education .fa {
+        font-size: 12px;
+        
+    }
+    .education h3::before {
+        left: -31px;
+        height: 167px;
+    }
+    .work h3 {
+        font-size: var(--font4);
+        text-align: center;
+    }
+    .work__text h4 {
+        font-size: var(--font5);
+    }
+    .work p {
+        font-size: 12px;
+    }
+    .university-year p {
+        font-size: 12px;
+    }
+    .work__university {
+        padding-bottom: 70px;
+    }
+    .work .fa {
+        font-size: 12px;
+        position: absolute;
+        left: 70px;
+    }
+    .work h3::before {
+        left: 9px;
+        height: 171px;
+    }
+    .work__list {
+        padding-bottom: 70px;
+        padding-left: 40px;
+    }
+    .language h3 {
+        font-size: var(--font4);
+        text-align: center;
+    }
+    .language__text h4 {
+        font-size: var(--font5);
+    }
+    .language p {
+        font-size: 12px;
+    }
+    .university-year p {
+        font-size: 12px;
+    }
+    .language__university {
+        padding-bottom: 70px;
+    }
+    .language .fa {
+        font-size: 12px;
+        position: absolute;
+        left: 25px;
+    }
+    .language h3::before {
+        left: 9px;
+        height: 242px;
+    }
+    .language__list {
+        padding-bottom: 70px;
+        padding-left: 40px;
+    }
+    #skills h3 {
+        font-size: var(--font4);
+        text-align: center;
+    }
+    #skills .fa {
+        font-size: 10px;
+        left: 220px;
+    }
+    #skills {
+        width: 80%;
+        padding-bottom: 70px;
+    }
+    .school {
+        height: 70px;
+    }
+    footer {
+        padding-top: 0;
+    }
+    .header__list .active {
+        line-height: 30px;
+    }
+    
+}
