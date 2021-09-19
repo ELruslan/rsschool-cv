@@ -42,7 +42,9 @@ My personal qualities: ambitious, collaborative,communicative,positive.
 **Code Example**
 ---------------------------------
 
-    function getMatrix(number) {
+    
+```javascript
+function getMatrix(number) {
                         // good luck
                         let arr=[];
                           for(let i = 0; i < number; i++){
@@ -55,6 +57,9 @@ My personal qualities: ambitious, collaborative,communicative,positive.
                         }
                         return arr;
                       } 
+}
+```
+                      
 ----   
 
 
