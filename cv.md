@@ -1,107 +1,48 @@
--   [Main](#Main)
--   [Resume](#Resume)
--   [About Me](#About_Me)
--   [Code](#Code)
--   [Contacts](#Contacts)
-
-![photo](img/photo.jpg)
 
 Ruslan Eloyan
-=============
+====================
+<img src="img/photo.jpg" width="200" height="250" align="right" top="10px" alt="photo" >
 
-Junior Frontend
+---
 
--   [![Youtube](svg/Youtube.svg)](#)
--   [![Instagram](svg/Instagram.svg)](#)
--   [![Facebook](svg/Facebook.svg)](#)
--   [![Twitter](svg/Twitter.svg)](#)
--   [![Pinterest](svg/Pinterest.svg)](#)
-  
-Resume
-------
+**Contacts**
+-------------------------
 
-**
+*   **Adress:** Minsk, Belarus
+*   **Phone:** +375 44 568-44-70
+*   **Email:** eloyan666@gmail.com
+*   **GitHub:** [ELruslan](https://github.com/elruslan)
+----
+**About Me**
+-------------------------
 
-### Education
+I am electronics engineer with 7+ years of experience electrical repair shops. In 2016 the created service center "Elservice" and has worked more than 5 years and this year decided career change.
+I recently began to be fascinated by web programming, e.g. developing apps and building websites.
+Well, I'm on a course at the moment in RS School.I would like to get a position of junior front-end to use my learnig skills  for create websites and developing apps.
+My personal qualities: ambitious, collaborative,communicative,positive.
 
-#### Polotsky State university
+---
 
-Faculty Computer-aided design of radio-electronic means \
- Radio electronics engineer
+**Skills**
+---------------------
 
-2008-2013
+*   HTML
+*   CSS
+*   JavaScript (Basic)
+*   Git
+*   Figma
+----
+**Work**
+---------------------
 
-#### Course
+*   Electrical repair shops "Elservice" 2016-2021 year
+*   Electrical repair shops "Greenservice" 2013-20215 year
+*   Manufacturing equipment and electronic means software testing departments "Horizont" 2012 year
+----
+**Code Example**
+---------------------------------
 
-Html and Css School "Loder"
-
-2014
-
-#### RS School
-
-Junior Front-end School "RS School"
-
-2021
-
-**
-
-### Work
-
-#### Holding "Horizont"work on the conveyor
-
-Work on the conveyor. Internship Engineer
-
-2012
-
-#### Service center "GreenService"
-
-Repair of digital equipment.Engineer
-
-2013-2015
-
-#### Service center "ELservice"
-
-Repair of digital equipment.Engineer
-
-2016-2021
-
-**
-
-### Skills
-
-HTML
-
-80%
-
-CSS
-
-70%
-
-JavaScript
-
-30%
-
-English
-
-40%
-
-About Me
---------
-
-For a long time he worked as a service center engineer. He was engaged
-in the repair of digital equipment. Even at the university it was
-interesting to write websites. After university, I worked as an engineer
-and at the same time went to HTML and CSS courses. 3 months of study, I
-didn't really learn anything new. As a result, I decided to open my own
-service center. I worked for 5 years and decided to close down and try
-my hand at the front-end. I am fond of valeyball. Active rest, jogging
-in the forest.
-
-Example Code
-------------
-
-``` {style="color:#d1d1d1;background:#000000;"}
-function getMatrix(number) {
+    function getMatrix(number) {
                         // good luck
                         let arr=[];
                           for(let i = 0; i < number; i++){
@@ -114,22 +55,16 @@ function getMatrix(number) {
                         }
                         return arr;
                       } 
-                      
-```
+----   
 
-Contacts
---------
 
-#### Ruslan Eloyan
+*   **Education:** Polotsk State University , Faculty of Computer Science
+and Electronics,engineer, electronics engineer, programmer
+*   **Courses:**
+    *   Lider 
+    *   RS school
+-----
+**English**
+-----------------------
 
-address:Minsk
-
-phone: +375 44 568 44 70
-
-mail:eloyan666@gmail.com
-
-[My GitHub](https://github.com/elruslan)
-
-2021
-
-[![RS School](svg/rs_school_js.svg)](https://rs.school/js/)
+**A2** (I am learning english now)
